@@ -3,14 +3,14 @@ PITCH PERFECT: A platform, For ideas to reach its true potential
 
 List of Personas:
 
-- Students / Developers (Founders)
+Students / Developers (Founders)
 - Login / Sign In
 - Domain
 - Idea submission (Create / Save / Delete)
 - Validate idea
 - List ideas with matching
 - Accept / Reject invitation from investor
-- Investors
+Investors
 - Login / Sign In
 - Filter / Search ideas
 - Rate / Comment on Ideas
