@@ -10,6 +10,7 @@ Students / Developers (Founders)
 - Validate idea
 - List ideas with matching
 - Accept / Reject invitation from investor
+
 Investors
 - Login / Sign In
 - Filter / Search ideas
