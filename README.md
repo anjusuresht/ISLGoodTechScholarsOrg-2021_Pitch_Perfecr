@@ -35,9 +35,10 @@ API’s needed:
 - API for investors to invest on projects
 
 
-API	                            Methods	    Response code	      Input	                          Response Json/String
-v1/pitchperfect/login	          POST	      200                 User,password	                  Json with access token
-		                                        401		                                              Unauthorized
+| API	                           | Methods	    | Response code	     | Input	                         | Response Json/String |
+| -------------------------------- |-----------------| ----------------- | -----------------| -----------------|
+| v1/pitchperfect/login	         |  POST	     | 200                | User,password|	                |  Json with access token|
+| 		                 |                   |     401		  |               |                             Unauthorized|
 		                                        403		                                              Forbidden
 v1/pitchperfect/idea	          POST	      201	                {"title":"",
                                                                 "abstract":"",
