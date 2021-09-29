@@ -34,13 +34,20 @@ API’s needed:
 - API for investors to show interest in a project
 - API for investors to invest on projects
 
-- [ ] v1/pitchperfect/login
-- [ ] v1/pitchperfect/{userid}/idea POST, PUT, GET, DELETE
-- [ ] v1/pitchperfect/idea	POST, PUT, GET
-- [ ] v1/pitchperfect/idea/{id} GET
-- [ ] v1/pitchperfect/{userid}/idea/{id}/asset  POST, PUT, GET, DELETE
-- [ ] v1/pitchperfect/idea/{id}/rate POST, GET
-- [ ] v1/pitchperfect/idea/{id}/comment POST, GET, PUT, DELETE
+- [ ] v1/pitchperfect/login - P2
+- [x] v1/pitchperfect/{userid}/idea POST, PUT, GET, DELETE - P1
+- [x] v1/pitchperfect/idea	POST, PUT, GET - P1
+- [x] v1/pitchperfect/idea/{id} GET  - P1
+- [ ] v1/pitchperfect/{userid}/idea/{id}/asset  POST, PUT, GET, DELETE - P3
+- [ ] v1/pitchperfect/idea/{id}/rate POST, GET - P3
+- [ ] v1/pitchperfect/idea/{id}/comment POST, GET, PUT, DELETE - P3
+- [ ] v1/pitchperfect/idea/{id}/interest POST, GET, DELETE - P3
+- [ ] v1/pitchperfect/{userid}/idea/interest GET - P3
+- [ ] v1/pitchperfect/idea/{id}/collaborate POST, GET, DELETE - P4
+- [ ] Encyrpt database content - P4
+- [ ] Package application - P3
+- [ ] Containerize application - P3
+- [ ] Deployment of application - P3
 
 | API	                           | Methods	    | Response code	     | Input	                         | Response Json/String |
 | -------------------------------- |-----------------| ----------------- | -----------------| -----------------|
