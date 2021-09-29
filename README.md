@@ -34,6 +34,9 @@ API’s needed:
 - API for investors to show interest in a project
 - API for investors to invest on projects
 
+- [ ] Come up with DB schema - P0
+- [ ] Database layer - to run queries / put data in DB - P0
+- [ ] state diagram - **e.g** idea - drafted(future scope), saved, published, deleted **e.g** user - active
 - [ ] v1/pitchperfect/login - P2
 - [x] v1/pitchperfect/{userid}/idea POST, PUT, GET, DELETE - P1
 - [x] v1/pitchperfect/idea	POST, PUT, GET - P1
