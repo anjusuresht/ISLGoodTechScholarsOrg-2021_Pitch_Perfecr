@@ -34,6 +34,28 @@ API’s needed:
 - API for investors to show interest in a project
 - API for investors to invest on projects
 
+
+API	                            Methods	    Response code	      Input	                          Response Json/String
+v1/pitchperfect/login	          POST	      200                 User,password	                  Json with access token
+		                                        401		                                              Unauthorized
+		                                        403		                                              Forbidden
+v1/pitchperfect/idea	          POST	      201	                {"title":"",
+                                                                "abstract":"",
+                                                                "scope":"",
+                                                                "implementationDetails":""}	    Id, timestamp
+v1/pitchperfect/idea/{id}	      PUT	        200	                {"title":"","abstract":"",
+                                                                "scope":"",
+                                                                "implementationDetails":""}	
+	                              DELETE	    204		
+	                              GET	        200		                                              Title,abstract,scope,
+                                                                                                implementation detail,                                                                                                                           timestamp(created),timestamp(updated)
+v1/pitchperfect/idea/{id}/rate	POST	      200		
+	                              GET	        200		                                              Rating value
+v1/pitchperfect/idea/{id}/      POST,       200,                                                post-
+comment                         GET,        200                                                 Get-all the comments
+                                DELETE	    200		
+
+
 Database:
 Data is stored in MongoDB
 
