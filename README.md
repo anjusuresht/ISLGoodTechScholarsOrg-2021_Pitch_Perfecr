@@ -53,31 +53,27 @@ API’s needed:
 - [ ] Deployment of application - P3
 
 | API	                           | Methods	    | Response code	     | Input	                         | Response Json/String |
-| -------------------------------- |-----------------| ----------------- | -----------------| -----------------|
+| -------------------------------- |-----------------| ----------------- | ----------------------------------|---------------------------|
 | v1/pitchperfect/login	         |  POST	     | 200                | User,password|	                |  Json with access token|
 | 		                 |                   |     401		  |               |                             Unauthorized|
 |		                 |                   |    403		   |               |                            Forbidden|				
 | v1/pitchperfect/{userid}/idea  | POST, PUT GET, DELETE | 201,200,200,204 | input json (field for copyrights) |  |
-| v1/pitchperfect/idea	         | POST	     | 201	|   {"title":"", "abstract":"", "scope":"",
-                                                                "implementationDetails":""} |	    Id, timestamp |
+| v1/pitchperfect/idea	         | POST	     | 201	|   {"title":"", "abstract":"", "scope":"",|                                |           |          |         "implementationDetails":""} |	    Id, timestamp |
 | v1/pitchperfect/{userid}/idea/{id}/asset | POST | 201 | input - file (supported file format) | | |
 | v1/pitchperfect/{userid}/idea/{id}/asset | GET | 201 |  | | json response with asset list |
 | v1/pitchperfect/{userid}/idea/{id}/asset/{assetId} | DELETE | 204 |  | | |
 | v1/pitchperfect/{userid}/idea/{id}/asset/{assetId} | PUT | 201 |  | | |
-| v1/pitchperfect/idea/{id}	  |    PUT	      |  200	|{"title":"", "abstract":"", "scope":"",
-                                                                "implementationDetails":""} | |	
-	                              DELETE	    204		
-	                              GET	        200		                                              Title,abstract,scope,
-                                                                                                implementation detail,                                                                                                                           timestamp(created),timestamp(updated)
-v1/pitchperfect/idea/{id}/rate	POST	      200		
-	                              GET	        200		                                              Rating value
-v1/pitchperfect/idea/{id}/      POST,       200,                                                post-
-comment                         GET,        200                                                 Get-all the comments
-                                DELETE	    200		
+| v1/pitchperfect/idea/{id}	  |    PUT	      |  200	|{"title":"", "abstract":"", "scope":"", "implementationDetails":""} | |	                                                               
+|	                          |   DELETE	      |  204	 |	
+|	                          |    GET	      |  200	 |	                    | Title,abstract,scope,implementation detail, timestamp(created),timestamp(updated) |                                                                                                                                                                                 
+| v1/pitchperfect/idea/{id}/rate  |	POST	      | 200	 |                          |	
+|	                          |    GET	      | 200	 |	                    |                         Rating value |
+| v1/pitchperfect/idea/{id}/comment| POST,GET,DELETE|  200,200,200 |                        | Post, Get-all the comments |
+
 
 
 Database:
-Data is stored in MongoDB
+Data is stored using MySQL
 
 Flow diagram:
 
