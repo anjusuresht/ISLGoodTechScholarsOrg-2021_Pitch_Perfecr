@@ -18,10 +18,13 @@ Investors
 - Interest (Partial interest for collaboration)
 - Setup meeting
 - Invest
+Database:
+Data is stored using MySQL
 
 Database Schema:
 
-![image](https://user-images.githubusercontent.com/83357771/135121514-376bf7ba-c259-4f95-bac5-37947041f306.png)
+![image](https://user-images.githubusercontent.com/83357771/135438291-279a70fa-99c2-4e1a-9f7a-8ba81a52b744.png)
+
 
 API’s needed:
 
@@ -72,8 +75,7 @@ API’s needed:
 
 
 
-Database:
-Data is stored using MySQL
+
 
 Flow diagram:
 
