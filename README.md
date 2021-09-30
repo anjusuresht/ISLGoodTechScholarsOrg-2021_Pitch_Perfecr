@@ -57,7 +57,7 @@ API’s needed:
 
 | API	                           | Methods	    | Response code	     | Input	                         | Response Json/String |
 | -------------------------------- |-----------------| ----------------- | ----------------------------------|---------------------------|
-| v1/pitchperfect/login	         |  POST	     | 200                | User,password|	                |  Json with access token|
+| v1/pitchperfect/login	           |  POST	         | 200                | User,password|	                         Json with access token|
 | 		                 |                   |     401		  |               |                             Unauthorized|
 |		                 |                   |    403		   |               |                            Forbidden|				
 | v1/pitchperfect/{userid}/idea  | POST, PUT GET, DELETE | 201,200,200,204 | input json (field for copyrights) |  |
