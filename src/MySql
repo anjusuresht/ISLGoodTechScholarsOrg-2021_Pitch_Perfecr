@@ -1,0 +1,61 @@
+create database pitchperfect;
+use pitchperfect;
+
+
+create table idea (
+ideaid int not null auto_increment,
+title varchar(100) not null,
+abstract varchar(300) not null,
+primary key(ideaid)
+);
+alter table idea add scope  varchar(100);
+ alter table idea add implementation_details  varchar(200);
+ alter table idea add userid int not null;
+ alter table idea add constraint idea_user_fk  foreign key(userid) references user(userid);
+ 
+
+ commit;
+ 
+ 
+ create table user (
+userid int not null auto_increment,
+name varchar(50) not null,
+email varchar(255) not null,
+tags varchar(30),
+primary key(userid)
+);
+
+insert into user (name,email) values ('Praveen','praveen@gmail.com');
+insert into user (name,email) values ('Aishwarya','aishwarya@gmail.com');
+insert into user (name,email) values ('Pranav','pranav@gmail.com');
+
+ create table investor (
+investor_id int not null auto_increment,
+name varchar(50) not null,
+email varchar(255) not null,
+company_name varchar(30),
+website varchar(30),
+primary key(investor_id)
+);
+insert into investor (name,email) values ('Deepa','deepa@gmail.com');
+insert into investor (name,email,company_name) values ('Sufail','sufail@gmail.com', 'Oracle');
+
+ create table interested (
+ideaid int not null,
+investor_id int not null,
+primary key(ideaid, investor_id)
+);
+create table rating (
+ideaid int not null,
+investor_id int not null,
+rate int not null,
+primary key(ideaid, investor_id)
+);
+create table comments (
+ideaid int not null,
+investor_id int not null,
+comments varchar(100) not null,
+primary key(ideaid, investor_id)
+);
+
+commit;
