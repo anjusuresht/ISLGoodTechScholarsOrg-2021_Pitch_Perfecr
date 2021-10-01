@@ -37,24 +37,6 @@ API’s needed:
 - API for investors to show interest in a project
 - API for investors to invest on projects
 
-- [ ] Come up with DB schema - P0
-- [ ] Database layer - to run queries / put data in DB - P0
-- [ ] state diagram - **e.g** idea - drafted(future scope), saved, published, deleted **e.g** user - active
-- [ ] v1/pitchperfect/login - P2
-- [x] v1/pitchperfect/{userid}/idea POST, PUT, GET, DELETE - P1
-- [x] v1/pitchperfect/idea	POST, PUT, GET - P1
-- [x] v1/pitchperfect/idea/{id} GET  - P1
-- [ ] v1/pitchperfect/{userid}/idea/{id}/asset  POST, PUT, GET, DELETE - P3
-- [ ] v1/pitchperfect/idea/{id}/rate POST, GET - P3
-- [ ] v1/pitchperfect/idea/{id}/comment POST, GET, PUT, DELETE - P3
-- [ ] v1/pitchperfect/idea/{id}/interest POST, GET, DELETE - P3
-- [ ] v1/pitchperfect/{userid}/idea/interest GET - P3
-- [ ] v1/pitchperfect/idea/{id}/collaborate POST, GET, DELETE - P4
-- [ ] Encyrpt database content - P4
-- [ ] Package application - P3
-- [ ] Containerize application - P3
-- [ ] Deployment of application - P3
-
 | API	                           | Methods	    | Response code	     | Input	                         | Response Json/String |
 | -------------------------------- |-----------------| ----------------- | ----------------------------------|---------------------------|
 | v1/pitchperfect/login	           |  POST	         | 200                | User,password|	                         Json with access token|
