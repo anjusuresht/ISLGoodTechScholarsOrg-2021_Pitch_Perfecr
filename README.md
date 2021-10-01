@@ -64,7 +64,8 @@ API’s needed:
 
 Flow diagram:
 
-![image](https://user-images.githubusercontent.com/83357771/135160213-b86460bf-7ff5-44d0-a7e9-8d48011993e5.png)
+![flow diagram](https://user-images.githubusercontent.com/61188154/135557199-1d059df5-c667-4d6d-af42-29f43e3e9c5a.png)
+
 
 
 
