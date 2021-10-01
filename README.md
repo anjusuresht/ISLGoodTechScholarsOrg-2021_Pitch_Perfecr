@@ -1,9 +1,15 @@
 # ISLGoodTechScholarsOrg-2021_Pitch_Perfect
 PITCH PERFECT: A platform, For ideas to reach its true potential
 
+Similar ideas:
+
+http://Funded.com
+
+https://www.watchpitch.com/
+
 List of Personas:
 
-Students / Developers (Founders)
+1. Students / Developers (Founders)
 - Login / Sign In
 - Domain
 - Idea submission (Create / Save / Delete)
@@ -11,7 +17,7 @@ Students / Developers (Founders)
 - List ideas with matching
 - Accept / Reject invitation from investor
 
-Investors
+2. Investors
 - Login / Sign In
 - Filter / Search ideas
 - Rate / Comment on Ideas
@@ -42,15 +48,15 @@ API’s needed:
 | v1/pitchperfect/login	           |  POST	         | 200                | User,password|	                         Json with access token|
 | 		                 |                   |     401		  |               |                             Unauthorized|
 |		                 |                   |    403		   |               |                            Forbidden|				
-| v1/pitchperfect/{userid}/idea  | POST | 201 | input json (field for copyrights) |  |
+| v1/pitchperfect/idea  | POST | 201 | input json (field for copyrights) |  |
 |                                | PUT | 200 | | |
 |                                |   GET  | 200    | | |
 |                                | DELETE | 204 | | |
 | v1/pitchperfect/idea	         | POST	     | 201	|   {"title":"", "abstract":"", "scope":"","implementationDetails":""}|    	    Id, timestamp |
-| v1/pitchperfect/{userid}/idea/{id}/asset | POST | 201 | input - file (supported file format) | | |
-| v1/pitchperfect/{userid}/idea/{id}/asset | GET | 201 |  |  json response with asset list |
-| v1/pitchperfect/{userid}/idea/{id}/asset/{assetId} | DELETE | 204 |  | | |
-| v1/pitchperfect/{userid}/idea/{id}/asset/{assetId} | PUT | 201 |  | | |
+| v1/pitchperfect/idea/{id}/asset | POST | 201 | input - file (supported file format) | | |
+| v1/pitchperfect/idea/{id}/asset | GET | 201 |  |  json response with asset list |
+| v1/pitchperfect/idea/{id}/asset/{assetId} | DELETE | 204 |  | | |
+| v1/pitchperfect/idea/{id}/asset/{assetId} | PUT | 201 |  | | |
 | v1/pitchperfect/idea/{id}	  |    PUT	      |  200	|{"title":"", "abstract":"", "scope":"", "implementationDetails":""} | |	                                                               
 |	                          |   DELETE	      |  204	 |	
 |	                          |    GET	      |  200	 |	                    | Title,abstract,scope,implementation detail, timestamp(created),timestamp(updated) |                                                                                                                                                                                 
